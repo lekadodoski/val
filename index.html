@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine Gift Card</title>
+    <link rel="stylesheet" href="valStyle.css" />
+  </head>
+  <body>
+    <div class="page" id="page1">
+      <div class="click-area">
+        <h1>Click Me ❤️</h1>
+      </div>
+    </div>
+    <div class="page hidden" id="page2">
+      <div class="card-content">
+        <img src="img/ted.jpg" alt="Photo" />
+        <p>To my dearest,</p>
+        <p>
+          <!-- You are the light in my life, the one who makes my heart flutter every
+          single day. Thank you for being you. I love you! ❤️ -->
+          Thanks for always being there for me. You always know how to cheer me
+          up when I'm feeling down. You're always be my support system, and
+          you're always so patient with me, even though I can be a bit slow
+          sometimes, hehe.
+        </p>
+        <br />
+        <!-- <p>
+          maaf ya di valentine kali ini aku gabisaa ngasih apa-apa, jadinya aku
+          bikin gift pake website 😅 . aku ngerasa klo semenjak akhir desember
+          kmrn hubungan kita aga sedikit lebih loose aja dibanding yg biasanya.
+          mungkin aku gabisa menuhin ekspektasi km ke aku. aku kyk gini karena
+          satu dan lain hal tp itu bukan berarti aku ga sayang km. maaf klo
+          misalnya aku gapernah ngajak km call ato pergi mulai dari akhir
+          desember ini. jujur aku ngerasa sedih bgt karena gajadi juicy luicy yg
+          di desember kmrn karena km punya wishlist buat nonton konser sm aku. i
+          hope someday we can watch a concert together.
+        </p> -->
+        <br />
+        <p>happy valentine sayang ❤️</p>
+      </div>
+    </div>
+
+    <script>
+      const page1 = document.getElementById("page1");
+      const page2 = document.getElementById("page2");
+
+      page1.addEventListener("click", () => {
+        page1.classList.add("fade-out");
+        setTimeout(() => {
+          page1.classList.add("hidden");
+          page2.classList.remove("hidden");
+          page2.classList.add("fade-in");
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
